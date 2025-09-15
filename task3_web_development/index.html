@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="calc-box">
+    <input type="text" id="inputBox" readonly />
+
+    <div class="keypad">
+      <button onclick="clearAll()">AC</button>
+      <button onclick="backspace()">DEL</button>
+      <button onclick="addToScreen('%')">%</button>
+      <button onclick="addToScreen('/')">÷</button>
+
+      <button onclick="addToScreen('7')">7</button>
+      <button onclick="addToScreen('8')">8</button>
+      <button onclick="addToScreen('9')">9</button>
+      <button onclick="addToScreen('*')">×</button>
+
+      <button onclick="addToScreen('4')">4</button>
+      <button onclick="addToScreen('5')">5</button>
+      <button onclick="addToScreen('6')">6</button>
+      <button onclick="addToScreen('-')">−</button>
+
+      <button onclick="addToScreen('1')">1</button>
+      <button onclick="addToScreen('2')">2</button>
+      <button onclick="addToScreen('3')">3</button>
+      <button onclick="addToScreen('+')">+</button>
+
+      <button onclick="addToScreen('0')" class="zero">0</button>
+      <button onclick="addToScreen('.')">.</button>
+      <button onclick="calculateResult()">=</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
