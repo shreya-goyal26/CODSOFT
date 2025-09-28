@@ -18,4 +18,6 @@ function calculateResult() {
   } catch (error) {
     inputBox.value = 'Invalid';
   }
+
 }
+
